@@ -31,7 +31,7 @@ namespace Flybooking2.Controllers
 
         // GET: api/Flights/5
         [HttpGet("{id}", Name = "Get")]
-        public string Get(string FlightNr)
+        public Flight Get(string FlightNr)
         {
             return flights.Find(i => i.FlightNr == FlightNr);
         }
